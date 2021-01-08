@@ -99,12 +99,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     //右滑触发删除按钮
-    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
-        return UITableViewCellEditingStyle.init(rawValue: 1)!
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return UITableViewCell.EditingStyle.init(rawValue: 1)!
     }
     
     //点击删除cell时触发
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         print("indexPath.row = editingStyle第\(indexPath.row)行")
         
     }
